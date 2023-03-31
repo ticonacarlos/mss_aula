@@ -1,0 +1,76 @@
+{
+    "client": "Thunder Client",
+    "collectionName": "20231_usjt_sdmobile_microsservicos",
+    "dateExported": "2023-03-31T00:54:06.251Z",
+    "version": "1.1",
+    "folders": [
+        {
+            "_id": "f67afd52-7556-460c-8287-a92fbf28c126",
+            "name": "lembretes",
+            "containerId": "",
+            "created": "2023-03-30T23:22:30.324Z",
+            "sortNum": 10000
+        },
+        {
+            "_id": "c14cf555-d3d5-446e-952a-0d0e8f339074",
+            "name": "observacoes",
+            "containerId": "",
+            "created": "2023-03-30T23:59:48.736Z",
+            "sortNum": 20000
+        }
+    ],
+    "requests": [
+        {
+            "_id": "7a7eb308-9546-4c9b-b06c-ca82b4c3ee69",
+            "colId": "5abf351b-ba42-48bf-a32d-3fa3447ea066",
+            "containerId": "f67afd52-7556-460c-8287-a92fbf28c126",
+            "name": "Salvar Lembrete",
+            "url": "localhost:4000/lembretes",
+            "method": "POST",
+            "sortNum": 10000,
+            "created": "2023-03-30T23:16:04.947Z",
+            "modified": "2023-03-30T23:27:40.972Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"texto\": \"Ir a teatro\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "d14b3a2a-a803-4261-a2cf-cb3575627002",
+            "colId": "5abf351b-ba42-48bf-a32d-3fa3447ea066",
+            "containerId": "f67afd52-7556-460c-8287-a92fbf28c126",
+            "name": "Obter Lembretes",
+            "url": "localhost:4000/lembretes",
+            "method": "GET",
+            "sortNum": 20000,
+            "created": "2023-03-30T23:23:20.180Z",
+            "modified": "2023-03-30T23:23:32.451Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "4c585fc7-2a07-4ebb-9dbb-4656d2b1a330",
+            "colId": "5abf351b-ba42-48bf-a32d-3fa3447ea066",
+            "containerId": "c14cf555-d3d5-446e-952a-0d0e8f339074",
+            "name": "Salvar Observação",
+            "url": "localhost:5000/lembretes/1/observacoes",
+            "method": "POST",
+            "sortNum": 40000,
+            "created": "2023-03-31T00:00:19.975Z",
+            "modified": "2023-03-31T00:05:45.927Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"texto\": \"Esquentar a água\"\n}",
+                "form": []
+            },
+            "tests": []
+        }
+    ]
+}
