@@ -1,75 +1,96 @@
 {
     "client": "Thunder Client",
     "collectionName": "20231_usjt_sdmobile_microsservicos",
-    "dateExported": "2023-03-31T00:54:06.251Z",
+    "dateExported": "2023-04-14T14:53:57.062Z",
     "version": "1.1",
     "folders": [
         {
-            "_id": "f67afd52-7556-460c-8287-a92fbf28c126",
+            "_id": "e0509e1a-9c84-4ec1-acba-fc5bbfa9b6e9",
             "name": "lembretes",
             "containerId": "",
-            "created": "2023-03-30T23:22:30.324Z",
-            "sortNum": 10000
+            "created": "2023-03-31T21:19:38.306Z",
+            "sortNum": 20000
         },
         {
-            "_id": "c14cf555-d3d5-446e-952a-0d0e8f339074",
+            "_id": "57b9c5b9-226b-4bd1-9e2f-e2de3cff2f8b",
             "name": "observacoes",
             "containerId": "",
-            "created": "2023-03-30T23:59:48.736Z",
-            "sortNum": 20000
+            "created": "2023-04-07T00:34:20.033Z",
+            "sortNum": 30000
+        },
+        {
+            "_id": "f7c5b387-fa4c-486e-b7d2-648d6a69e8e6",
+            "name": "consulta",
+            "containerId": "",
+            "created": "2023-04-14T14:38:03.152Z",
+            "sortNum": 40000
         }
     ],
     "requests": [
         {
-            "_id": "7a7eb308-9546-4c9b-b06c-ca82b4c3ee69",
-            "colId": "5abf351b-ba42-48bf-a32d-3fa3447ea066",
-            "containerId": "f67afd52-7556-460c-8287-a92fbf28c126",
+            "_id": "e6b0d5b4-2ce8-48a9-a9e3-14e2b2750f9a",
+            "colId": "b34103e6-bed4-46ae-8f93-9dbc6fbf7485",
+            "containerId": "e0509e1a-9c84-4ec1-acba-fc5bbfa9b6e9",
             "name": "Salvar Lembrete",
             "url": "localhost:4000/lembretes",
             "method": "POST",
             "sortNum": 10000,
-            "created": "2023-03-30T23:16:04.947Z",
-            "modified": "2023-03-30T23:27:40.972Z",
+            "created": "2023-03-31T21:12:23.806Z",
+            "modified": "2023-04-09T21:52:40.519Z",
             "headers": [],
             "params": [],
             "body": {
                 "type": "json",
-                "raw": "{\n  \"texto\": \"Ir a teatro\"\n}",
+                "raw": "{\n  \"texto\": \"{{#string}}\"\n}",
                 "form": []
             },
             "tests": []
         },
         {
-            "_id": "d14b3a2a-a803-4261-a2cf-cb3575627002",
-            "colId": "5abf351b-ba42-48bf-a32d-3fa3447ea066",
-            "containerId": "f67afd52-7556-460c-8287-a92fbf28c126",
-            "name": "Obter Lembretes",
+            "_id": "aeb26a14-655b-4667-878a-359c342ab950",
+            "colId": "b34103e6-bed4-46ae-8f93-9dbc6fbf7485",
+            "containerId": "e0509e1a-9c84-4ec1-acba-fc5bbfa9b6e9",
+            "name": "Obter Lembrete",
             "url": "localhost:4000/lembretes",
             "method": "GET",
-            "sortNum": 20000,
-            "created": "2023-03-30T23:23:20.180Z",
-            "modified": "2023-03-30T23:23:32.451Z",
+            "sortNum": 40000,
+            "created": "2023-03-31T21:22:12.562Z",
+            "modified": "2023-03-31T21:22:59.328Z",
             "headers": [],
             "params": [],
             "tests": []
         },
         {
-            "_id": "4c585fc7-2a07-4ebb-9dbb-4656d2b1a330",
-            "colId": "5abf351b-ba42-48bf-a32d-3fa3447ea066",
-            "containerId": "c14cf555-d3d5-446e-952a-0d0e8f339074",
+            "_id": "7560021f-ac3f-4919-bfde-bde6df8fc0c2",
+            "colId": "b34103e6-bed4-46ae-8f93-9dbc6fbf7485",
+            "containerId": "57b9c5b9-226b-4bd1-9e2f-e2de3cff2f8b",
             "name": "Salvar Observação",
-            "url": "localhost:5000/lembretes/1/observacoes",
+            "url": "localhost:5000/lembretes/2/observacoes",
             "method": "POST",
-            "sortNum": 40000,
-            "created": "2023-03-31T00:00:19.975Z",
-            "modified": "2023-03-31T00:05:45.927Z",
+            "sortNum": 70000,
+            "created": "2023-04-07T00:34:44.737Z",
+            "modified": "2023-04-14T14:42:13.813Z",
             "headers": [],
             "params": [],
             "body": {
                 "type": "json",
-                "raw": "{\n  \"texto\": \"Esquentar a água\"\n}",
+                "raw": "{\n  \"texto\": \"{{#string}}\"\n}\n",
                 "form": []
             },
+            "tests": []
+        },
+        {
+            "_id": "c6734bf9-14b5-444f-841c-53695a1855f5",
+            "colId": "b34103e6-bed4-46ae-8f93-9dbc6fbf7485",
+            "containerId": "f7c5b387-fa4c-486e-b7d2-648d6a69e8e6",
+            "name": "Obter Base Consolidada",
+            "url": "localhost:6000/lembretes",
+            "method": "GET",
+            "sortNum": 80000,
+            "created": "2023-04-14T14:38:21.132Z",
+            "modified": "2023-04-14T14:41:21.223Z",
+            "headers": [],
+            "params": [],
             "tests": []
         }
     ]
